@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "./dist/",
     "lib": ["ESNext"],
     "target": "ESNext",
     "module": "ESNext",
@@ -7,6 +8,10 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "types": ["bun-types"],
+    "baseUrl": "./src",
+    "paths": {
+      "~/*": ["*"],
+    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -18,6 +23,6 @@
     "skipLibCheck": true,
     "strict": true,
     "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "forceConsistentCasingInFileNames": true,
+  },
 }
