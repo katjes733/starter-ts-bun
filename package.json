@@ -1,0 +1,16 @@
+{
+  "name": "starter-ts-bun",
+  "module": "main.ts",
+  "type": "module",
+  "baseUrl": "./src",
+  "scripts": {
+    "start": "bun run src/main.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.2",
+    "bun-types": "^1.0.23"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
