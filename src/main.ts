@@ -1,3 +1,5 @@
+import log from "./log";
+
 // eslint-disable-next-line no-undef
 const server = Bun.serve({
   port: 3000,
@@ -7,4 +9,4 @@ const server = Bun.serve({
   },
 });
 
-console.log(`Listening on http://localhost:${server.port} ...`);
+log.info(`Listening on http://localhost:${server.port} ...`);
